@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "SET HERE THE PROJECT ID IN FIREBASE"
+  }
+}
