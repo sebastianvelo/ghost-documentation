@@ -1,6 +1,7 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
 import SimpleUtility from "../common/helpers/SimpleUtility";
+import ColorTransformer from "../common/transformers/color/ColorTransformer";
 
 const InteractivityUtilities = {
     ...SimpleUtility({
@@ -9,11 +10,13 @@ const InteractivityUtilities = {
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.CARET_COLOR,
-        property: PropertyCSS.CARET_COLOR
+        property: PropertyCSS.CARET_COLOR,
+        transformer: ColorTransformer,
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.ACCENT_COLOR,
-        property: PropertyCSS.FLOAT
+        property: PropertyCSS.ACCENT_COLOR,
+        transformer: ColorTransformer,
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.POINTER_EVENTS,

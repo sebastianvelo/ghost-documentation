@@ -12,7 +12,7 @@ const CheatsheetBody: FunctionComponent<CheatsheetBodyProps> = () => {
     const getActiveCategory = () => CheatsheetData.sections[active[0]].categories[active[1]];
 
     return (
-        <div className="d_grid cols_5 h_70vh">
+        <div className="d_grid cols_6 h_70vh">
             <CheatsheetIndex {...CheatsheetData} setActive={setActive} />
             <CheatsheetTable category={getActiveCategory()} />
         </div>

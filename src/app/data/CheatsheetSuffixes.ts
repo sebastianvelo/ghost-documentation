@@ -3,7 +3,6 @@ import GhostPrefix from "lib/utility/enum/GhostPrefix";
 const ColorSuffix = ["r-g-b", "r-g-b-a"];
 const LengthSuffix = ["length"];
 const NumberSuffix = ["number"];
-
 const BorderSuffix = ["width-color?-style?"];
 
 const CheatsheetSuffixes: any = {

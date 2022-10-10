@@ -1,9 +1,10 @@
-import SimpleUtility from "../common/helpers/SimpleUtility";
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { LetterSpacingTransformer, LineHeightTransformer, TextDecorationThicknessTransformer, TextDecorationTransformer, TextShadowTransformer } from "./transformers";
+import SimpleUtility from "../common/helpers/SimpleUtility";
 import ColorTransformer from "../common/transformers/color/ColorTransformer";
+import LengthTransformer from "../common/transformers/common/LengthTransformer";
 import ReplaceSeparatorWithSpaceTransformer from "../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
+import { LetterSpacingTransformer, LineHeightTransformer, TextDecorationTransformer, TextShadowTransformer } from "./transformers";
 
 const TypographyUtilities = {
     ...SimpleUtility({
@@ -17,7 +18,8 @@ const TypographyUtilities = {
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.FONT_SIZE,
-        property: PropertyCSS.FONT_SIZE
+        property: PropertyCSS.FONT_SIZE,
+        transformer: LengthTransformer,
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.FONT_FAMILY,
@@ -70,7 +72,7 @@ const TypographyUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.TEXT_DECORATION_THICKNESS,
         property: PropertyCSS.TEXT_DECORATION_THICKNESS,
-        transformer: TextDecorationThicknessTransformer
+        transformer: LengthTransformer
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.TEXT_DECORATION_COLOR,

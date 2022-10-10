@@ -1,6 +1,7 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
 import SimpleUtility from "../common/helpers/SimpleUtility";
+import LengthTransformer from "../common/transformers/common/LengthTransformer";
 import { BoxTransformer } from "./transformers";
 
 const BoxUtility = SimpleUtility({ prefix: GhostPrefix.BOX, property: PropertyCSS.BOX_SIZING, transformer: BoxTransformer });
@@ -19,10 +20,10 @@ const OverscrollUtility = SimpleUtility({ prefix: GhostPrefix.OVERSCROLL, proper
 const OverscrollYUtility = SimpleUtility({ prefix: GhostPrefix.OVERSCROLL_Y, property: PropertyCSS.OVERSCROLL_Y });
 const OverscrollXUtility = SimpleUtility({ prefix: GhostPrefix.OVERSCROLL_X, property: PropertyCSS.OVERSCROLL_X });
 
-const TopUtility = SimpleUtility({ prefix: GhostPrefix.TOP, property: PropertyCSS.TOP });
-const BottomUtility = SimpleUtility({ prefix: GhostPrefix.BOTTOM, property: PropertyCSS.BOTTOM });
-const RightUtility = SimpleUtility({ prefix: GhostPrefix.RIGHT, property: PropertyCSS.RIGHT });
-const LeftUtility = SimpleUtility({ prefix: GhostPrefix.LEFT, property: PropertyCSS.LEFT });
+const TopUtility = SimpleUtility({ prefix: GhostPrefix.TOP, property: PropertyCSS.TOP, transformer: LengthTransformer });
+const BottomUtility = SimpleUtility({ prefix: GhostPrefix.BOTTOM, property: PropertyCSS.BOTTOM, transformer: LengthTransformer });
+const RightUtility = SimpleUtility({ prefix: GhostPrefix.RIGHT, property: PropertyCSS.RIGHT, transformer: LengthTransformer });
+const LeftUtility = SimpleUtility({ prefix: GhostPrefix.LEFT, property: PropertyCSS.LEFT, transformer: LengthTransformer });
 
 const DisplayUtility = SimpleUtility({ prefix: GhostPrefix.DISPLAY, property: PropertyCSS.DISPLAY });
 

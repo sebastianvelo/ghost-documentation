@@ -1,8 +1,9 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
 import SimpleUtility from "../common/helpers/SimpleUtility";
-import { OutlineTransformer, OutlineWidthTransformer } from "./transformers";
 import ColorTransformer from "../common/transformers/color/ColorTransformer";
+import LengthTransformer from "../common/transformers/common/LengthTransformer";
+import { OutlineTransformer } from "./transformers";
 
 const OutlineUtilities = {
     ...SimpleUtility({
@@ -18,7 +19,7 @@ const OutlineUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.OUTLINE_OFFSET,
         property: PropertyCSS.OUTLINE_OFFSET,
-        transformer: OutlineWidthTransformer
+        transformer: LengthTransformer
     }),
     ...SimpleUtility({
         prefix: GhostPrefix.OUTLINE_STYLE,
@@ -27,7 +28,7 @@ const OutlineUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.OUTLINE_WIDTH,
         property: PropertyCSS.OUTLINE_WIDTH,
-        transformer: OutlineWidthTransformer
+        transformer: LengthTransformer
     }),
 };
 
