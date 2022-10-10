@@ -18,7 +18,7 @@ const ColorValue = () => `${randomFromInterval(0, 255)}-${randomFromInterval(0, 
 const NumberValue = () => randomFromInterval(5, 25);
 const BorderValue = "3-green-solid";
 
-const CheatsheetExamples: any = {
+const CheatsheetTableColumnExamples: any = {
     ...randomExample(GhostPrefix.CURSOR),
     [GhostPrefix.CARET_COLOR]: ColorValue(),
     [GhostPrefix.ACCENT_COLOR]: ColorValue(),
@@ -178,4 +178,4 @@ const CheatsheetExamples: any = {
     [GhostPrefix.Z_INDEX]: NumberValue(),
 };
 
-export default CheatsheetExamples;
+export default CheatsheetTableColumnExamples;

@@ -1,9 +1,9 @@
-import CheatsheetExamples from "app/data/CheatsheetExamples";
+import CheatsheetTableColumnExamples from "app/data/CheatsheetTableColumnExamples";
 import GhostDeclaration from "lib/utility/GhostDeclaration";
 import Utility from "lib/utility/Utility";
 import { FunctionComponent } from "react";
-import Property from "../common/Property";
-import Value from "../common/Value";
+import Property from "../../common/Property";
+import Value from "../../common/Value";
 
 const getValueExample = (example: string, declaration: GhostDeclaration) =>
     declaration.transformer ? declaration.transformer(example) : example;
@@ -14,7 +14,7 @@ interface ExampleProps {
 }
 
 const Example: FunctionComponent<ExampleProps> = (props: ExampleProps) => {
-    const example = CheatsheetExamples[props.prefix];
+    const example = CheatsheetTableColumnExamples[props.prefix];
     
     return (
         <pre className="py_4px txt_white txt-weight_bold col-span_2">
