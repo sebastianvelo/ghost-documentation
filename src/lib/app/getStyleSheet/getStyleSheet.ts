@@ -18,9 +18,20 @@ const getSelectorAndDeclarationsFromGhostClassName = (className: string) => {
     }
 };
 
-const getStyleSheet = (classNames: string[]): void => {
+const getElement = (): HTMLStyleElement => {
+    const existentElement = document.querySelector("#ghost-style") as HTMLStyleElement;
+    if (existentElement) {
+        existentElement.innerHTML = "";
+        return existentElement;
+    }
     const element = document.createElement("style");
+    element.id = "ghost-style";
     document.head.append(element);
+    return element;
+}
+
+const getStyleSheet = (classNames: string[]): void => {
+    const element = getElement();
 
     classNames.map(getSelectorAndDeclarationsFromGhostClassName).forEach(utility => {
         insertRuleAndDeclarationBlock(utility.selector, utility.declarations, element)

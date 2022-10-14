@@ -5,7 +5,7 @@ const LengthSuffix = ["length"];
 const NumberSuffix = ["number"];
 const BorderSuffix = ["width-color?-style?"];
 
-const CheatsheetSuffixes: any = {
+const CheatsheetTableColumnSuffixes: any = {
     [GhostPrefix.CURSOR]: ["alias", "all-scroll", "auto", "cell", "col-resize", "context-menu", "copy", "crosshair", "default", "e-resize", "ew-resize", "grab", "grabbing", "help", "move", "n-resize", "ne-resize", "nesw-resize", "ns-resize", "nw-resize", "nwse-resize", "no-drop", "none", "not-allowed", "pointer", "progress", "row-resize", "s-resize", "se-resize", "sw-resize", "text", "URL", "vertical-text", "w-resize", "wait", "zoom-in", "zoom-out", "initial", "inherit"],
     [GhostPrefix.CARET_COLOR]: ColorSuffix,
     [GhostPrefix.ACCENT_COLOR]: ColorSuffix,
@@ -153,6 +153,8 @@ const CheatsheetSuffixes: any = {
     [GhostPrefix.BORDER_BOTTOM]: BorderSuffix,
     [GhostPrefix.BORDER_Y]: BorderSuffix,
     [GhostPrefix.BORDER_X]: BorderSuffix,
+    [GhostPrefix.DIVIDE_Y]: BorderSuffix,
+    [GhostPrefix.DIVIDE_X]: BorderSuffix,
     [GhostPrefix.BORDER_RADIUS]: LengthSuffix,
 
     [GhostPrefix.OUTLINE]: BorderSuffix,
@@ -164,4 +166,4 @@ const CheatsheetSuffixes: any = {
     [GhostPrefix.Z_INDEX]: NumberSuffix,
 };
 
-export default CheatsheetSuffixes;
+export default CheatsheetTableColumnSuffixes;

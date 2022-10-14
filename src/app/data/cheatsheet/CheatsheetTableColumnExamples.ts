@@ -1,5 +1,5 @@
 import GhostPrefix from "lib/utility/enum/GhostPrefix";
-import CheatsheetSuffixes from "./CheatsheetSuffixes";
+import CheatsheetTableColumnSuffixes from "./CheatsheetTableColumnSuffixes";
 
 const randomFromInterval = (min: number, max: number): string =>
     `${Math.floor(Math.random() * (max - min + 1) + min)}`;
@@ -10,7 +10,7 @@ const pickRandomOfArray = (suffixes: string[]) => {
 }
 
 const randomExample = (prefix: GhostPrefix) => ({
-    [prefix]: pickRandomOfArray(CheatsheetSuffixes[prefix])
+    [prefix]: pickRandomOfArray(CheatsheetTableColumnSuffixes[prefix])
 });
 
 const LengthValue = () => randomFromInterval(5, 25);
@@ -167,6 +167,8 @@ const CheatsheetTableColumnExamples: any = {
     [GhostPrefix.BORDER_BOTTOM]: BorderValue,
     [GhostPrefix.BORDER_Y]: BorderValue,
     [GhostPrefix.BORDER_X]: BorderValue,
+    [GhostPrefix.DIVIDE_Y]: BorderValue,
+    [GhostPrefix.DIVIDE_X]: BorderValue,
     [GhostPrefix.BORDER_RADIUS]: "50%",
 
     [GhostPrefix.OUTLINE]: BorderValue,

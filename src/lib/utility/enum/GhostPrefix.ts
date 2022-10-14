@@ -148,6 +148,8 @@ enum GhostPrefix {
   BORDER_BOTTOM = "border-b",
   BORDER_Y = "border-y",
   BORDER_X = "border-x",
+  DIVIDE_Y = "divide-y",
+  DIVIDE_X = "divide-x",
   BORDER_RADIUS = "rounded",
 
   OUTLINE = "outline",

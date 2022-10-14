@@ -1,8 +1,8 @@
 import GhostPrefix from "lib/utility/enum/GhostPrefix";
 
 const PaddingExampleData = {
-    aditionalClassName: "d_flex bg_255-255-255-50 border_2 w_max-content",
-    childrenClassName: "bg_primary h_50 w_50",
+    aditionalClassName: "d_flex bg_primary w_max-content",
+    childrenClassName: "bg_primaryLight h_50 w_50 border_1",
     children: 4
 };
 

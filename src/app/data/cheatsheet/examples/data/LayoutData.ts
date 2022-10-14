@@ -2,8 +2,8 @@ import GhostPrefix from "lib/utility/enum/GhostPrefix";
 
 const LayoutData: any = {
     [GhostPrefix.DISPLAY]: {
-        aditionalClassName: "bg_primary w_100% cols_3",
-        childrenClassName: "bg_255-255-255-50  h_50 w_50 border_1",
+        aditionalClassName: "bg_primary w_100% cols_2",
+        childrenClassName: "bg_255-255-255-50 h_25 w_25 border_1",
         children: 4
     },
     [GhostPrefix.POSITION]: {

@@ -1,4 +1,4 @@
-import CheatsheetTableColumnExamples from "app/data/CheatsheetTableColumnExamples";
+import CheatsheetTableColumnExamples from "app/data/cheatsheet/CheatsheetTableColumnExamples";
 import GhostDeclaration from "lib/utility/GhostDeclaration";
 import Utility from "lib/utility/Utility";
 import { FunctionComponent } from "react";

@@ -1,4 +1,4 @@
-import CheatsheetData from "app/data/CheatsheetData";
+import CheatsheetData from "app/data/cheatsheet/CheatsheetData";
 import initGhost from "lib";
 import config from "lib/ghost.config";
 import { FunctionComponent, useEffect, useState } from "react";

@@ -1,5 +1,5 @@
-import CheatsheetExamples from "app/data/examples/CheatsheetExamples";
-import CheatsheetExamplesData from "app/data/examples/CheatsheetExamplesData";
+import CheatsheetExamples from "app/data/cheatsheet/examples/CheatsheetExamples";
+import CheatsheetExamplesData from "app/data/cheatsheet/examples/CheatsheetExamplesData";
 import Utility from "lib/utility/Utility";
 import { FunctionComponent } from "react";
 import UtilityRowExamples from "./examples/UtilityRowExamples";

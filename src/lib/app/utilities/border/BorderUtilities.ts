@@ -41,6 +41,18 @@ const BorderUtilities = {
             { property: PropertyCSS.BORDER_BOTTOM, transformer: BorderTransformer }
         ],
     },
+    [GhostPrefix.DIVIDE_X]: {
+        declarations: [
+            { property: PropertyCSS.BORDER_LEFT, transformer: BorderTransformer },
+        ],
+        selector: (className: string) => `${className} > * + *`
+    },
+    [GhostPrefix.DIVIDE_Y]: {
+        declarations: [
+            { property: PropertyCSS.BORDER_TOP, transformer: BorderTransformer }
+        ],
+        selector: (className: string) => `${className} > * + *`
+    },
     ...SimpleUtility({
         prefix: GhostPrefix.BORDER_RADIUS,
         property: PropertyCSS.BORDER_RADIUS

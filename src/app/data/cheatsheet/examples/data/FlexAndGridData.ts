@@ -14,9 +14,6 @@ const ContentExampleData = {
 };
 
 const FlexAndGridData: any = {
-    [GhostPrefix.ORDER]: {
-
-    },
     [GhostPrefix.GAP]: GapExampleData,
     [GhostPrefix.COLUMN_GAP]: GapExampleData,
     [GhostPrefix.ROW_GAP]: GapExampleData,
@@ -36,6 +33,9 @@ const FlexAndGridData: any = {
     [GhostPrefix.PLACE_ITEMS]: {
     },
     [GhostPrefix.PLACE_SELF]: {
+    },
+    [GhostPrefix.ORDER]: {
+
     },
 };
 
