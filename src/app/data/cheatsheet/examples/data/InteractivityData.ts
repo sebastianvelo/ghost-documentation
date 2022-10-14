@@ -15,10 +15,8 @@ const InteractivityData: any = {
         value: 50,
         max: 100,
     },
-    [GhostPrefix.POINTER_EVENTS]: {
-    },
-    [GhostPrefix.SCROLL_BEHAVIOR]: {
-    },
+    [GhostPrefix.POINTER_EVENTS]: null,
+    [GhostPrefix.SCROLL_BEHAVIOR]: null,
     [GhostPrefix.RESIZE]: {
         aditionalClassName: "bg_primaryLight w_100% h_100 overflow_auto",
     },

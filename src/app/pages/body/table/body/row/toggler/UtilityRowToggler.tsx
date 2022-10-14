@@ -16,12 +16,14 @@ interface UtilityRowTogglerProps {
     prefix: string;
     utility: Utility;
     i: number;
+    isHover?: boolean;
 }
 
 const UtilityRowToggler: FunctionComponent<UtilityRowTogglerProps> = (props: UtilityRowTogglerProps) => {
     const color = getRowColor(props.i % 2 === 0);
+    const isHover = props.isHover ? "bg_secondary:hover cursor_pointer" : "";
     return (
-        <summary className={`d_grid align-items_center cols_6 px_16px ${color} txt-size_13px`}>
+        <summary className={`d_grid align-items_center cols_6 px_16px txt-size_13px ${color} ${isHover}`}>
             <Property>{props.utility.declarations.map(d => d.property).join(",")}</Property>
             <Prefix {...props} />
             <Suffixes {...props} />

@@ -7,15 +7,10 @@ const SizingData: any = {
     [GhostPrefix.HEIGHT]: {
         aditionalClassName: "border_2 w_100% bg_secondary",
     },
-    [GhostPrefix.MIN_WIDTH]: {
-    },
-    [GhostPrefix.MIN_HEIGHT]: {
-    },
-    [GhostPrefix.MAX_WIDTH]: {
-    },
-    [GhostPrefix.MAX_HEIGHT]: {
-
-    },
+    [GhostPrefix.MIN_WIDTH]: null,
+    [GhostPrefix.MIN_HEIGHT]: null,
+    [GhostPrefix.MAX_WIDTH]: null,
+    [GhostPrefix.MAX_HEIGHT]: null,
 };
 
 export default SizingData;

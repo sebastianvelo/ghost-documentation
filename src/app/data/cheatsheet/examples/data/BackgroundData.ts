@@ -6,20 +6,13 @@ const BackgroundExampleData = () => ({
 
 const BackgroundData: any = {
     [GhostPrefix.BG_COLOR]: BackgroundExampleData(),
-    [GhostPrefix.BG_ATTACHMENT]: {
-    },
-    [GhostPrefix.BG_BLEND]: {
-    },
-    [GhostPrefix.BG_CLIP]: {
-    },
-    [GhostPrefix.BG_ORIGIN]: {
-    },
-    [GhostPrefix.BG_POSITION]: {
-    },
-    [GhostPrefix.BG_REPEAT]: {
-    },
-    [GhostPrefix.BG_SIZE]: {
-    },
+    [GhostPrefix.BG_ATTACHMENT]: null,
+    [GhostPrefix.BG_BLEND]: null,
+    [GhostPrefix.BG_CLIP]: null,
+    [GhostPrefix.BG_ORIGIN]: null,
+    [GhostPrefix.BG_POSITION]: null,
+    [GhostPrefix.BG_REPEAT]: null,
+    [GhostPrefix.BG_SIZE]: null,
 };
 
 export default BackgroundData;

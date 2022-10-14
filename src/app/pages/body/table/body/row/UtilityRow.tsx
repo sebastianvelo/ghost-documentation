@@ -11,15 +11,21 @@ interface UtilityRowProps {
     i: number
 }
 
-const UtilityRow: FunctionComponent<UtilityRowProps> = (props: UtilityRowProps) => (
-    <details>
-        <UtilityRowToggler {...props} />
-        <UtilityRowExamples
-            prefix={props.prefix}
-            suffixes={CheatsheetExamples[props.prefix]}
-            {...CheatsheetExamplesData[props.prefix]}
-        />
-    </details>
-);
+const UtilityRow: FunctionComponent<UtilityRowProps> = (props: UtilityRowProps) => {
+    const data = CheatsheetExamplesData[props.prefix];
+    return (
+        <details>
+            <UtilityRowToggler
+                isHover={!!data}
+                {...props}
+            />
+            {data && <UtilityRowExamples
+                prefix={props.prefix}
+                suffixes={CheatsheetExamples[props.prefix]}
+                {...data}
+            />}
+        </details>
+    );
+}
 
 export default UtilityRow;
