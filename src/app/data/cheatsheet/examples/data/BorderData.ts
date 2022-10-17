@@ -38,10 +38,10 @@ const BorderData: any = {
     [GhostPrefix.OUTLINE]: BorderExampleData,
     [GhostPrefix.OUTLINE_WIDTH]: OutlineExampleData,
     [GhostPrefix.OUTLINE_OFFSET]: OutlineExampleData,
+    [GhostPrefix.OUTLINE_COLOR]: OutlineExampleData,
     [GhostPrefix.OUTLINE_STYLE]: {
         aditionalClassName: "h_100 bg_primary"
     },
-    [GhostPrefix.OUTLINE_COLOR]: OutlineExampleData,
 };
 
 export default BorderData;
